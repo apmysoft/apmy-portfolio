@@ -1,0 +1,11 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Página no encontrada | APMY" description="La dirección solicitada no está disponible en este portfolio." canonicalPath={null} noindex>
+    <section class="section prose">
+        <h1>Página no encontrada</h1>
+        <p>La dirección que buscas no está disponible.</p>
+        <p>Puedes volver al <a href={sitePath('/')}>inicio</a> o consultar <a href={sitePath('/proyectos/')}>Proyectos</a> y <a href={sitePath('/blog/')}>Laboratorio</a>.</p>
+    </section>
+</Layout>

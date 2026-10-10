@@ -1,0 +1,32 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import { getCollection } from 'astro:content';
+import Layout from './Layout.astro';
+import EntryList from '../components/EntryList.astro';
+
+interface Props {
+    page: { path: string; kind: string; title: string; description: string; target?: string; links?: string[] };
+}
+const { page } = Astro.props;
+const entries = await getCollection('portfolio', entry => !entry.data.draft);
+const wanted = new Set(page.links ?? []);
+const related = entries.filter(entry => wanted.has(entry.data.path)).sort((a, b) => {
+    const date = (entry: typeof a) => (entry.data.kind === 'proyecto' ? entry.data.chronologicalDate ?? entry.data.originalPublished : entry.data.originalPublished)?.getTime() ?? 0;
+    return date(b) - date(a) || a.data.path.localeCompare(b.data.path);
+});
+if (related.length !== wanted.size) throw new Error(`Destino ausente en archivo histórico: ${page.path}`);
+const redirect = page.kind === 'redirect';
+---
+<Layout title={`${page.title} | APMY`} description={page.description}
+    canonicalPath={redirect ? page.target : null} noindex={!redirect} redirectTo={redirect ? page.target : undefined}>
+    <section class="section prose">
+        <h1>{page.title}</h1>
+        {redirect ? <p>Esta publicación está disponible en <a href={sitePath(page.target)}>su dirección actual</a>.</p> :
+            page.kind === 'retired' ? <p>La antigua página se ha retirado de la selección actual.</p> :
+            <>
+                <p>Estas son las publicaciones de este archivo que se conservan en el portfolio.</p>
+                {related.length ? <EntryList entries={related} /> : <p>Este archivo ya no reúne publicaciones en la selección actual.</p>}
+            </>}
+        {!redirect && <p>Puedes consultar <a href={sitePath('/proyectos/')}>Proyectos</a> y <a href={sitePath('/blog/')}>Laboratorio</a>.</p>}
+    </section>
+</Layout>

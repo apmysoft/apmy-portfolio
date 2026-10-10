@@ -1,0 +1,145 @@
+[
+  {
+    "chronology": "2011",
+    "text": "Entro en la universidad desilusionado con la informática después de un año en una consultora SAP. Buen entorno, mala sensación.",
+    "side": "left",
+    "date": "2011-06",
+    "dateAnchor": "Final de la consultora SAP, no inicio universitario"
+  },
+  {
+    "chronology": "2015",
+    "text": "Dejo la universidad a falta de 15 créditos. Un título no define cómo trabajo. Intento montar una empresa. Sale mal.",
+    "side": "right",
+    "date": "2015-06"
+  },
+  {
+    "chronology": "2015",
+    "date": "2015-06",
+    "dateApproximate": true,
+    "text": "TFG de seguridad en internet. Cuando todos programan aplicaciones, me intereso por los hábitos y el consumo.",
+    "side": "left"
+  },
+  {
+    "chronology": "2015",
+    "text": "Creo un canal de YouTube para perder el miedo a hablar en público. Diseño, vídeo, constancia. Aprendo a exponerme.",
+    "side": "left",
+    "date": "2015-07",
+    "link": {
+      "label": "canal de YouTube",
+      "href": "/mi-canal-youtube/"
+    }
+  },
+  {
+    "chronology": "2015",
+    "text": "Empiezo a ejecutar sin miedo: radio local, hostelería, eventos. Diseño, comunicación, coordinación. Aprendo haciendo.",
+    "side": "right",
+    "date": "2015-11"
+  },
+  {
+    "chronology": "2016",
+    "text": "Toco fondo. Sin trabajo ni horizonte claro. Decido reciclarme.",
+    "side": "left",
+    "date": "2016-09"
+  },
+  {
+    "chronology": "2016–2018",
+    "text": "Estudio carpintería. Empujo límites desde el primer día. Cuando piden un mueble, construyo una silla con madera curvada.",
+    "side": "right",
+    "link": {
+      "label": "silla con madera curvada",
+      "href": "/silla-de-oficina-de-madera/"
+    },
+    "startDate": "2016-09",
+    "endDate": "2018-06"
+  },
+  {
+    "chronology": "2018",
+    "date": "2018-05",
+    "text": "Construyo una cabina de grabación. Un proyecto sin encargo.",
+    "side": "right",
+    "link": {
+      "label": "cabina de grabación",
+      "href": "/construccion-de-cabina-de-grabacion-economica/"
+    }
+  },
+  {
+    "chronology": "2018",
+    "date": "2018-10",
+    "text": "Una biblioteca experimental. Nace Bibliowave.",
+    "side": "left",
+    "link": {
+      "label": "Bibliowave",
+      "href": "/bibliowave/"
+    }
+  },
+  {
+    "chronology": "2018",
+    "text": "Construyo una caravana de madera. Gano el primer premio de proyectos de FP de Cantabria.",
+    "side": "right",
+    "date": "2018-12",
+    "dateAnchor": "Premio, no final de construcción",
+    "link": {
+      "label": "caravana de madera",
+      "href": "/wood-teardrop/"
+    }
+  },
+  {
+    "chronology": "2019–2020",
+    "text": "Reforma integral de mi casa. Un año decidiendo sin validación externa. Diseño, coordinación, error real.",
+    "side": "left",
+    "date": "2019-05",
+    "dateAnchor": "Inicio de la reforma",
+    "link": {
+      "label": "Reforma integral de mi casa",
+      "href": "/reforma-integral-mi-casa/"
+    }
+  },
+  {
+    "chronology": "2020",
+    "text": "Pandemia. Sin trabajo, pero con criterio y autoestima recuperados.",
+    "side": "left",
+    "date": "2020-03"
+  },
+  {
+    "chronology": "2020",
+    "text": "Trabajo en un hipermercado mientras sigo construyendo para familiares y amigos.",
+    "side": "right",
+    "startDate": "2020-07",
+    "endDate": "2020-08"
+  },
+  {
+    "chronology": "2020",
+    "text": "Entro en mi empresa actual. Estructuras de madera. Todo empieza a encajar.",
+    "side": "right",
+    "date": "2020-09"
+  },
+  {
+    "chronology": "2022",
+    "text": "Formación continua: entramado ligero, escaneo 3D, nubes de puntos. El oficio se cruza con la tecnología.",
+    "side": "left",
+    "date": "2022-12"
+  },
+  {
+    "chronology": "2025",
+    "text": "Vuelvo a crear con software. Inteligencia artificial como herramienta. Apps internas. Optimización real.",
+    "side": "right",
+    "date": "2025-04"
+  },
+  {
+    "chronology": "2026",
+    "date": "2026-03",
+    "dateAnchor": "Publicación de la app en Google Play",
+    "text": "De diseñar estructuras de madera a publicar mi primera App en Google Play",
+    "side": "right",
+    "link": {
+      "label": "mi primera App en Google Play",
+      "href": "/caliber-guard/"
+    }
+  },
+  {
+    "chronology": "Ahora",
+    "text": "Exploro, pruebo, publico. Portfolio, producto, escritura. El proceso sigue abierto.",
+    "side": "left",
+    "date": "today"
+  }
+]

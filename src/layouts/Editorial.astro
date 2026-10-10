@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Layout from './Layout.astro';
+
+interface Props { entry: CollectionEntry<'portfolio'>; }
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.seoTitle} description={entry.data.description} canonicalPath={entry.data.path} image={entry.data.socialImage}>
+    <article class="prose">
+        <Content />
+        {entry.data.kind !== 'pagina' && (
+            <footer class="editorial-dates">
+                {entry.data.mediaCredits.map(credit => <p class="media-credit">{credit}</p>)}
+                {entry.data.originalPublished && <p>Publicación original: <time datetime={entry.data.originalPublished.toISOString().slice(0, 10)}>{entry.data.originalPublished.toLocaleDateString('es-ES', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' })}</time>.</p>}
+                <p>Texto revisado: <time datetime={entry.data.revised.toISOString().slice(0, 10)}>{entry.data.revised.toLocaleDateString('es-ES', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' })}</time>.</p>
+            </footer>
+        )}
+    </article>
+</Layout>

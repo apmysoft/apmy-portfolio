@@ -1,0 +1,17 @@
+---
+import { sitePath } from '../../utils/site-path.mjs';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+    const entries = await getCollection('portfolio', entry => !entry.data.draft && entry.data.kind === 'laboratorio');
+    return entries.map(entry => ({ params: { slug: entry.data.path.slice(1, -1) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+<Layout title={entry.data.seoTitle} description={entry.data.description} canonicalPath={entry.data.path} redirectTo={entry.data.path}>
+    <section class="section">
+        <h1>{entry.data.title}</h1>
+        <p>Esta publicación está disponible en <a href={sitePath(entry.data.path)}>su dirección original</a>.</p>
+    </section>
+</Layout>

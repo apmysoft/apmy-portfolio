@@ -1,0 +1,93 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import milestones from '../data/home-timeline.json';
+import { fraction, staticCards, today } from '../utils/timeline.mjs';
+interface Milestone {
+    chronology: string;
+    text: string;
+    side: string;
+    date?: string;
+    startDate?: string;
+    endDate?: string;
+    dateApproximate?: boolean;
+    link?: { label: string; href: string };
+}
+const start = '2011-06-01';
+const end = today();
+const desktopLength = 6000;
+const mobileLength = 10000;
+const items = (milestones as Milestone[]).map(item => ({ ...item,
+    position: fraction(item.date ?? item.startDate, start, end),
+}));
+const desktop = staticCards(items, desktopLength, false);
+const mobile = staticCards(items, mobileLength, true);
+---
+<div class="timeline-shell" data-start={start} data-end={end}
+    style={`--timeline-desktop-length:${desktopLength}px;--timeline-mobile-length:${mobileLength}px;${desktop.variables}${mobile.variables}--timeline-desktop-height:${desktop.height};--timeline-mobile-height:${mobile.height};`}>
+    <svg class="timeline-connectors" aria-hidden="true"></svg>
+    <ol class="home-timeline">
+        {items.map((milestone, index) => <li class:list={['milestone', milestone.side]}
+            data-date={milestone.date ?? milestone.startDate} data-side={milestone.side}
+            style={`--position:${milestone.position};--card-desktop-top:${desktop.tops[index]};--card-mobile-top:${mobile.tops[index]};`}>
+            <span class="timeline-anchor" aria-hidden="true"></span>
+            <div class="milestone-content reveal">
+                <p>{milestone.link ? <>{milestone.text.split(milestone.link.label)[0]}<a href={sitePath(milestone.link.href)}>{milestone.link.label}</a>{milestone.text.split(milestone.link.label)[1]}</> : milestone.text}</p>
+            </div>
+        </li>)}
+    </ol>
+</div>
+<script>
+    import { fraction, today } from '../utils/timeline.mjs';
+    const shell = document.querySelector<HTMLElement>('.timeline-shell');
+    if (shell) {
+        const cards = [...shell.querySelectorAll<HTMLElement>('.milestone')];
+        const svg = shell.querySelector<SVGSVGElement>('.timeline-connectors')!;
+        let scheduled = false;
+        function arrange() {
+            if (!shell) return;
+            scheduled = false;
+            // Update the endpoint on every visit, even when the static build is older.
+            const end = today();
+            shell.dataset.end = end;
+            const mobile = window.matchMedia('(max-width: 600px)').matches;
+            const length = parseFloat(getComputedStyle(shell).getPropertyValue('--timeline-length'));
+            const width = shell.clientWidth;
+            const axis = mobile ? 0 : width / 2;
+            const bottom = { left: 0, right: 0 };
+            let height = length + 180;
+            let previousTop = 0;
+            svg.setAttribute('viewBox', `0 0 ${width} ${length}`);
+            const paths: SVGPathElement[] = [];
+            for (const card of cards) {
+                const position = fraction(card.dataset.date, shell.dataset.start, end);
+                const anchor = position * length;
+                const lane = mobile ? 'right' : card.dataset.side as 'left' | 'right';
+                const top = Math.max(anchor - 12, bottom[lane], previousTop);
+                previousTop = top;
+                card.style.setProperty('--position', String(position));
+                card.style.setProperty('--card-top', `${top}px`);
+                bottom[lane] = top + card.offsetHeight + 64;
+                height = Math.max(height, bottom[lane]);
+                const edge = lane === 'left' ? card.offsetLeft + card.offsetWidth : card.offsetLeft;
+                const bend = axis + (edge - axis) / 2;
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', `M ${axis} ${anchor} H ${bend} V ${top + 12} H ${edge}`);
+                paths.push(path);
+            }
+            shell.style.setProperty('--timeline-height', `${height}px`);
+            svg.replaceChildren(...paths);
+        }
+        function schedule() {
+            if (!scheduled) { scheduled = true; requestAnimationFrame(arrange); }
+        }
+        arrange();
+        document.fonts.ready.then(schedule);
+        window.addEventListener('resize', schedule, { passive: true });
+        if ('ResizeObserver' in window) {
+            const observer = new ResizeObserver(schedule);
+            cards.forEach(card => observer.observe(card));
+        }
+        // Re-evaluate dates if a tab remains open overnight.
+        document.addEventListener('visibilitychange', () => { if (!document.hidden) schedule(); });
+    }
+</script>

@@ -1,0 +1,27 @@
+{
+  "name": "proud-phase",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "astro": "astro",
+    "verify:artifact": "node scripts/verify-public-artifact.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/ibm-plex-sans": "^5.2.8",
+    "astro": "^5.17.1",
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2"
+  }
+}

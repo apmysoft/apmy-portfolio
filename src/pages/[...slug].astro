@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Editorial from '../layouts/Editorial.astro';
+import Compatibility from '../layouts/Compatibility.astro';
+import legacyRoutes from '../data/legacy-routes.json';
+
+export async function getStaticPaths() {
+    const entries = await getCollection('portfolio', entry => !entry.data.draft && entry.data.path !== '/');
+    const canonical = new Set(entries.map(entry => entry.data.path));
+    for (const page of legacyRoutes) {
+        if (canonical.has(page.path) || page.path === '/') throw new Error(`Ruta histórica duplicada: ${page.path}`);
+    }
+    return [
+        ...entries.map(entry => ({ params: { slug: entry.data.path.slice(1, -1) }, props: { entry, compatibility: undefined } })),
+        ...legacyRoutes.map(compatibility => ({ params: { slug: compatibility.path.slice(1, -1) }, props: { entry: undefined, compatibility } })),
+    ];
+}
+
+const { entry, compatibility } = Astro.props;
+---
+{entry ? <Editorial entry={entry} /> : compatibility && <Compatibility page={compatibility} />}

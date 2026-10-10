@@ -1,0 +1,577 @@
+[
+  {
+    "path": "/silla-de-oficina/",
+    "kind": "redirect",
+    "title": "Silla de oficina de madera",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/silla-de-oficina-de-madera/"
+  },
+  {
+    "path": "/diseno-grafico/",
+    "kind": "redirect",
+    "title": "Mis primeros trabajos de diseño gráfico",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/proyectos-previos-de-diseno-grafico/"
+  },
+  {
+    "path": "/en-construccion/",
+    "kind": "redirect",
+    "title": "Inicio",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/"
+  },
+  {
+    "path": "/apmy-wood-instagram/",
+    "kind": "redirect",
+    "title": "Enlaces de interés",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/hola/"
+  },
+  {
+    "path": "/muebles-infantiles-dinosaurio/",
+    "kind": "redirect",
+    "title": "Una mesa y una silla con forma de dinosaurio",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/muebles-infantiles-con-forma-de-dinosaurio/"
+  },
+  {
+    "path": "/construir-cabina-grabacion-economica/",
+    "kind": "redirect",
+    "title": "Cabina de grabación económica",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/construccion-de-cabina-de-grabacion-economica/"
+  },
+  {
+    "path": "/construccion-porche-de-madera-cantabria/",
+    "kind": "redirect",
+    "title": "Construcción de un porche de madera",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/construccion-de-un-porche-de-madera/"
+  },
+  {
+    "path": "/maqueta-3d-piso-autocad-2019/",
+    "kind": "redirect",
+    "title": "El modelo 3D de mi vivienda",
+    "description": "Acceso histórico a esta publicación.",
+    "target": "/maqueta-3d-autocad-2019/"
+  },
+  {
+    "path": "/category/blog/",
+    "kind": "redirect",
+    "title": "Laboratorio",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/blog/"
+  },
+  {
+    "path": "/category/proyectos/",
+    "kind": "redirect",
+    "title": "Proyectos",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/proyectos/"
+  },
+  {
+    "path": "/category/proyectos/page/2/",
+    "kind": "redirect",
+    "title": "Proyectos",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/proyectos/"
+  },
+  {
+    "path": "/project/diseno-cnc-big-boss/",
+    "kind": "redirect",
+    "title": "Diseño CNC: Big Boss",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/diseno-cnc-big-boss/"
+  },
+  {
+    "path": "/project/wood-teardrop/",
+    "kind": "redirect",
+    "title": "Wood Teardrop",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/wood-teardrop/"
+  },
+  {
+    "path": "/project/muebles-infantiles-dinosaurio/",
+    "kind": "redirect",
+    "title": "Una mesa y una silla con forma de dinosaurio",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/muebles-infantiles-con-forma-de-dinosaurio/"
+  },
+  {
+    "path": "/project/silla-oficina/",
+    "kind": "redirect",
+    "title": "Silla de oficina de madera",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/silla-de-oficina-de-madera/"
+  },
+  {
+    "path": "/wood-teardrop-parte-1/",
+    "kind": "redirect",
+    "title": "Wood Teardrop",
+    "description": "Acceso histórico a esta publicación o índice.",
+    "target": "/wood-teardrop/"
+  },
+  {
+    "path": "/tag/aprendizaje/",
+    "kind": "archive",
+    "title": "Archivo histórico: aprendizaje",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/"
+    ]
+  },
+  {
+    "path": "/tag/madera/",
+    "kind": "archive",
+    "title": "Archivo histórico: madera",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/"
+    ]
+  },
+  {
+    "path": "/tag/torno-de-madera/",
+    "kind": "archive",
+    "title": "Archivo histórico: torno de madera",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/"
+    ]
+  },
+  {
+    "path": "/tag/youtube/",
+    "kind": "archive",
+    "title": "Archivo histórico: youtube",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/",
+      "/demolicion-cocina/",
+      "/desmantelamiento-armario-salon-comedor/",
+      "/desmantelamiento-cocina/",
+      "/eliminar-suelo-terrazo/",
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/2018/",
+    "kind": "archive",
+    "title": "Archivo histórico: 2018",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/gran-nevada-castro-urdiales-2018/"
+    ]
+  },
+  {
+    "path": "/tag/castro-urdiales/",
+    "kind": "archive",
+    "title": "Archivo histórico: castro urdiales",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/gran-nevada-castro-urdiales-2018/",
+      "/ruta-pincho-castro-urdiales-2019/"
+    ]
+  },
+  {
+    "path": "/tag/fotografia/",
+    "kind": "archive",
+    "title": "Archivo histórico: fotografia",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/gran-nevada-castro-urdiales-2018/",
+      "/ruta-pincho-castro-urdiales-2019/"
+    ]
+  },
+  {
+    "path": "/tag/gran-nevada/",
+    "kind": "archive",
+    "title": "Archivo histórico: gran nevada",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/gran-nevada-castro-urdiales-2018/"
+    ]
+  },
+  {
+    "path": "/tag/armario/",
+    "kind": "archive",
+    "title": "Archivo histórico: armario",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/desmantelamiento-armario-salon-comedor/",
+      "/montaje-armario-vestidor-ikea-pax/"
+    ]
+  },
+  {
+    "path": "/tag/desmantelamiento/",
+    "kind": "archive",
+    "title": "Archivo histórico: desmantelamiento",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/desmantelamiento-armario-salon-comedor/",
+      "/desmantelamiento-cocina/"
+    ]
+  },
+  {
+    "path": "/tag/salon/",
+    "kind": "archive",
+    "title": "Archivo histórico: salón",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/desmantelamiento-armario-salon-comedor/"
+    ]
+  },
+  {
+    "path": "/tag/cocina/",
+    "kind": "archive",
+    "title": "Archivo histórico: cocina",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/",
+      "/demolicion-cocina/",
+      "/desmantelamiento-cocina/"
+    ]
+  },
+  {
+    "path": "/tag/reforma/",
+    "kind": "archive",
+    "title": "Archivo histórico: reforma",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/desmantelamiento-cocina/"
+    ]
+  },
+  {
+    "path": "/tag/2019/",
+    "kind": "archive",
+    "title": "Archivo histórico: 2019",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/",
+      "/ruta-pincho-castro-urdiales-2019/"
+    ]
+  },
+  {
+    "path": "/tag/ruta-del-pincho/",
+    "kind": "archive",
+    "title": "Archivo histórico: ruta del pincho",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/ruta-pincho-castro-urdiales-2019/"
+    ]
+  },
+  {
+    "path": "/tag/albanileria/",
+    "kind": "archive",
+    "title": "Archivo histórico: albañileria",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/demolicion-cocina/",
+      "/eliminar-suelo-terrazo/"
+    ]
+  },
+  {
+    "path": "/tag/eliminar-suelo/",
+    "kind": "archive",
+    "title": "Archivo histórico: eliminar suelo",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/eliminar-suelo-terrazo/"
+    ]
+  },
+  {
+    "path": "/tag/terrazo/",
+    "kind": "archive",
+    "title": "Archivo histórico: terrazo",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/eliminar-suelo-terrazo/"
+    ]
+  },
+  {
+    "path": "/tag/demolicion/",
+    "kind": "archive",
+    "title": "Archivo histórico: demolicion",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/demolicion-cocina/"
+    ]
+  },
+  {
+    "path": "/tag/3d/",
+    "kind": "archive",
+    "title": "Archivo histórico: 3d",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/autocad-2019/",
+    "kind": "archive",
+    "title": "Archivo histórico: autocad 2019",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/diseno-grafico/",
+    "kind": "archive",
+    "title": "Archivo histórico: diseño grafico",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/maqueta-3d/",
+    "kind": "archive",
+    "title": "Archivo histórico: maqueta 3d",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/piso-3d/",
+    "kind": "archive",
+    "title": "Archivo histórico: piso 3d",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/maqueta-3d-autocad-2019/"
+    ]
+  },
+  {
+    "path": "/tag/armario-vestidor/",
+    "kind": "archive",
+    "title": "Archivo histórico: armario vestidor",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/montaje-armario-vestidor-ikea-pax/"
+    ]
+  },
+  {
+    "path": "/tag/ikea/",
+    "kind": "archive",
+    "title": "Archivo histórico: ikea",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/",
+      "/montaje-armario-vestidor-ikea-pax/"
+    ]
+  },
+  {
+    "path": "/tag/montaje/",
+    "kind": "archive",
+    "title": "Archivo histórico: montaje",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/montaje-armario-vestidor-ikea-pax/"
+    ]
+  },
+  {
+    "path": "/tag/pax/",
+    "kind": "archive",
+    "title": "Archivo histórico: pax",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/montaje-armario-vestidor-ikea-pax/"
+    ]
+  },
+  {
+    "path": "/tag/carpinteria/",
+    "kind": "archive",
+    "title": "Archivo histórico: carpinteria",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/"
+    ]
+  },
+  {
+    "path": "/tag/cocina-unica/",
+    "kind": "archive",
+    "title": "Archivo histórico: cocina unica",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/"
+    ]
+  },
+  {
+    "path": "/tag/encimeras-de-madera/",
+    "kind": "archive",
+    "title": "Archivo histórico: encimeras de madera",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/"
+    ]
+  },
+  {
+    "path": "/tag/ikea-metod/",
+    "kind": "archive",
+    "title": "Archivo histórico: ikea metod",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/"
+    ]
+  },
+  {
+    "path": "/tag/muebles-de-ikea/",
+    "kind": "archive",
+    "title": "Archivo histórico: muebles de ikea",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": [
+      "/cocina-unica-muebles-ikea/"
+    ]
+  },
+  {
+    "path": "/tag/2020/",
+    "kind": "archive",
+    "title": "Archivo histórico: 2020",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/tag/amazon/",
+    "kind": "archive",
+    "title": "Archivo histórico: amazon",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/tag/bricolaje/",
+    "kind": "archive",
+    "title": "Archivo histórico: bricolaje",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/tag/herramientas/",
+    "kind": "archive",
+    "title": "Archivo histórico: herramientas",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/tag/ofertas/",
+    "kind": "archive",
+    "title": "Archivo histórico: ofertas",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/tag/prime-day/",
+    "kind": "archive",
+    "title": "Archivo histórico: prime day",
+    "description": "Entradas conservadas de este archivo de etiquetas.",
+    "links": []
+  },
+  {
+    "path": "/category/creativity/",
+    "kind": "archive",
+    "title": "Archivo histórico de publicaciones",
+    "description": "Publicaciones conservadas del antiguo archivo.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/",
+      "/bibliowave/",
+      "/configuracion-pc-ofimatica-economico/",
+      "/construccion-de-cabina-de-grabacion-economica/",
+      "/construccion-de-un-porche-de-madera/",
+      "/demolicion-cocina/",
+      "/desmantelamiento-armario-salon-comedor/",
+      "/desmantelamiento-cocina/",
+      "/diseno-cnc-big-boss/",
+      "/diseno-logo-personal-apmy/",
+      "/eliminar-suelo-terrazo/",
+      "/gran-nevada-castro-urdiales-2018/",
+      "/maqueta-3d-autocad-2019/",
+      "/montaje-armario-vestidor-ikea-pax/",
+      "/muebles-infantiles-con-forma-de-dinosaurio/",
+      "/proyectos-previos-de-diseno-grafico/",
+      "/prueba-resistencia-ensamble-cola-milano/",
+      "/ruta-pincho-castro-urdiales-2019/",
+      "/silla-de-oficina-de-madera/",
+      "/wood-teardrop/"
+    ]
+  },
+  {
+    "path": "/author/slipknot864/",
+    "kind": "archive",
+    "title": "Archivo histórico de publicaciones",
+    "description": "Publicaciones conservadas del antiguo archivo.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/",
+      "/bibliowave/",
+      "/cocina-unica-muebles-ikea/",
+      "/configuracion-pc-ofimatica-economico/",
+      "/construccion-de-cabina-de-grabacion-economica/",
+      "/construccion-de-un-porche-de-madera/",
+      "/demolicion-cocina/",
+      "/desmantelamiento-armario-salon-comedor/",
+      "/desmantelamiento-cocina/",
+      "/diseno-cnc-big-boss/",
+      "/diseno-logo-personal-apmy/",
+      "/eliminar-suelo-terrazo/",
+      "/gran-nevada-castro-urdiales-2018/",
+      "/maqueta-3d-autocad-2019/",
+      "/montaje-armario-vestidor-ikea-pax/",
+      "/muebles-infantiles-con-forma-de-dinosaurio/",
+      "/proyectos-previos-de-diseno-grafico/",
+      "/prueba-resistencia-ensamble-cola-milano/",
+      "/ruta-pincho-castro-urdiales-2019/",
+      "/silla-de-oficina-de-madera/",
+      "/wood-teardrop/"
+    ]
+  },
+  {
+    "path": "/author/slipknot864/page/2/",
+    "kind": "archive",
+    "title": "Archivo histórico de publicaciones",
+    "description": "Publicaciones conservadas del antiguo archivo.",
+    "links": [
+      "/aprendiendo-usar-torno-madera/",
+      "/bibliowave/",
+      "/cocina-unica-muebles-ikea/",
+      "/configuracion-pc-ofimatica-economico/",
+      "/construccion-de-cabina-de-grabacion-economica/",
+      "/construccion-de-un-porche-de-madera/",
+      "/demolicion-cocina/",
+      "/desmantelamiento-armario-salon-comedor/",
+      "/desmantelamiento-cocina/",
+      "/diseno-cnc-big-boss/",
+      "/diseno-logo-personal-apmy/",
+      "/eliminar-suelo-terrazo/",
+      "/gran-nevada-castro-urdiales-2018/",
+      "/maqueta-3d-autocad-2019/",
+      "/montaje-armario-vestidor-ikea-pax/",
+      "/muebles-infantiles-con-forma-de-dinosaurio/",
+      "/proyectos-previos-de-diseno-grafico/",
+      "/prueba-resistencia-ensamble-cola-milano/",
+      "/ruta-pincho-castro-urdiales-2019/",
+      "/silla-de-oficina-de-madera/",
+      "/wood-teardrop/"
+    ]
+  },
+  {
+    "path": "/sobre-mi/",
+    "kind": "retired",
+    "title": "Esta página ya no forma parte del portfolio",
+    "description": "La antigua página se ha retirado de la selección actual."
+  },
+  {
+    "path": "/contacto/",
+    "kind": "retired",
+    "title": "Esta página ya no forma parte del portfolio",
+    "description": "La antigua página se ha retirado de la selección actual."
+  },
+  {
+    "path": "/marketing-empresas/",
+    "kind": "retired",
+    "title": "Esta página ya no forma parte del portfolio",
+    "description": "La antigua página se ha retirado de la selección actual."
+  },
+  {
+    "path": "/amazon-prime-day-2020/",
+    "kind": "retired",
+    "title": "Esta página ya no forma parte del portfolio",
+    "description": "La antigua página se ha retirado de la selección actual."
+  }
+]

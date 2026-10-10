@@ -1,0 +1,66 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import '../styles/global.css';
+import '@fontsource/ibm-plex-sans/latin-400.css';
+import '@fontsource/ibm-plex-sans/latin-600.css';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '@fontsource/ibm-plex-mono/latin-500.css';
+import site from '../data/site.json';
+
+interface Props {
+	title?: string;
+	description?: string;
+	canonicalPath?: string | null;
+	noindex?: boolean;
+	image?: string;
+	redirectTo?: string;
+	home?: boolean;
+}
+
+const { title = site.title, description = site.description, canonicalPath = Astro.url.pathname, noindex = false, image, redirectTo, home = false } = Astro.props;
+const canonical = canonicalPath === null ? undefined : new URL(sitePath(canonicalPath), Astro.site ?? site.site_url).href;
+const previewSite = Astro.site?.hostname === 'apmysoft.github.io';
+const socialImage = image ? new URL(sitePath(image), Astro.site ?? site.site_url).href : undefined;
+---
+
+<!doctype html>
+<html lang={site.language}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={sitePath('/favicon.svg')} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		{canonical && <link rel="canonical" href={canonical} />}
+		{(noindex || previewSite) && <meta name="robots" content="noindex, follow" />}
+		<link rel="sitemap" type="application/xml" href={sitePath('/sitemap.xml')} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		{canonical && <meta property="og:url" content={canonical} />}
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={site.title} />
+		{socialImage && <meta property="og:image" content={socialImage} />}
+		{redirectTo && <meta http-equiv="refresh" content={`0;url=${sitePath(redirectTo)}`} />}
+	</head>
+	<body>
+		<a class="skip-link" href="#contenido">Saltar al contenido</a>
+		<div class:list={["layout-container", { "home-layout": home }]}>
+			{!home && <header style="margin-bottom: var(--space-xl); display: flex; justify-content: space-between; align-items: baseline;">
+				<a href={sitePath('/')} style="font-weight: 600; font-size: 1.25rem;">{site.title}</a>
+				<nav aria-label="Navegación principal" style="display: flex; gap: var(--space-md); font-family: var(--font-mono); font-size: 0.875rem;">
+					<a href={sitePath('/proyectos/')}>proyectos</a>
+					<a href={sitePath('/blog/')}>laboratorio</a>
+					<a href={sitePath('/prensa/')}>prensa</a>
+				</nav>
+			</header>}
+			<main id="contenido" tabindex="-1">
+				<slot />
+			</main>
+			{!home && <footer style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid hsl(var(--color-border)); font-size: 0.875rem;">
+				<p>&copy; {new Date().getFullYear()} {site.author.name}. {site.description}</p>
+				<a href="https://www.linkedin.com/in/antoniomadrazo/" target="_blank" rel="noopener">LinkedIn</a>
+			</footer>}
+		</div>
+	</body>
+</html>

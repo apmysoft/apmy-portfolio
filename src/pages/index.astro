@@ -1,0 +1,102 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Timeline from '../components/Timeline.astro';
+import '../styles/home.css';
+const entries = await getCollection('portfolio', entry => !entry.data.draft);
+const entry = entries.find(entry => entry.data.path === '/');
+if (!entry) throw new Error('Falta la portada editorial');
+const notes = entries.filter(entry => entry.data.kind === 'laboratorio')
+    .sort((a, b) => (b.data.originalPublished?.getTime() ?? 0) - (a.data.originalPublished?.getTime() ?? 0) || a.data.path.localeCompare(b.data.path))
+    .slice(0, 3);
+---
+<Layout home title="Antonio Madrazo — Empiezo antes de tenerlo claro | APMY" description={entry.data.description} canonicalPath="/">
+    <Navigation />
+    <section class="home-hero" aria-labelledby="apertura">
+        <div><h1 id="apertura">Empiezo antes de tenerlo claro.</h1><p>Ajusto mientras avanzo.</p></div>
+    </section>
+    <section class="home-context home-reading reveal" aria-label="Desde dónde trabajo">
+        <p>Nunca he trabajado bien siguiendo instrucciones cerradas.</p>
+        <p>He aprendido construyendo sin garantías, equivocándome pronto y ajustando sobre la marcha.</p>
+        <p>Esta web no es un catálogo.<br />Es el rastro de cómo pienso cuando hago.</p>
+    </section>
+    <section class="home-journey" aria-label="Recorrido personal y profesional">
+        <Timeline />
+    </section>
+    <section id="proyectos" class="home-section home-reading reveal" aria-labelledby="casos">
+        <h2 id="casos">Casos donde el proceso importaba más que la solución inicial.</h2>
+        <div class="home-cases">
+            <article><h3><a href={sitePath('/wood-teardrop/')}>Wood Teardrop <span aria-hidden="true">↗</span></a></h3><p>Construir sin saber exactamente a dónde iba a llegar.</p></article>
+            <article><h3><a href={sitePath('/bibliowave/')}>Bibliowave <span aria-hidden="true">↗</span></a></h3><p>Resolver un problema real sin asumir la primera solución.</p></article>
+        </div>
+        <a class="home-text-link" href={sitePath('/proyectos/')}>Ver todos los proyectos <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="home-section home-reading home-hinge reveal" aria-labelledby="bisagra">
+        <h2 id="bisagra">Proyecto bisagra</h2>
+        <p>Hubo un proyecto sin cliente que cambió mi forma de trabajar.</p>
+        <p>Reformar mi propia casa me obligó a decidir sin validación externa.<br />A convivir con errores reales.<br />A iterar sin excusas.</p>
+        <a class="home-text-link" href={sitePath('/reforma-integral-mi-casa/')}>Entrar en el proyecto <span aria-hidden="true">→</span></a>
+    </section>
+    <section id="laboratorio" class="home-section home-reading reveal" aria-labelledby="lab">
+        <h2 id="lab"><a href={sitePath('/blog/')}>Laboratorio <span aria-hidden="true">↗</span></a></h2>
+        <p>Ideas en curso.<br />Procesos abiertos.<br />Preguntas que aún no sé responder.</p>
+        <ul class="home-notes">{notes.map(note => <li><a href={sitePath(note.data.path)}>{note.data.title} <span aria-hidden="true">↗</span></a></li>)}</ul>
+    </section>
+    <section id="ecos" class="home-section home-reading reveal" aria-labelledby="ecos-titulo">
+        <h2 id="ecos-titulo">Ecos externos</h2>
+        <p>A veces, lo que haces genera conversación fuera.</p>
+        <div class="home-video" hidden>
+            <button type="button" class="video-load" data-video="RHyPDvW76Ng"><span class="video-play" aria-hidden="true">▷</span><span>Reproducir reportaje de RTVE en YouTube</span><small>Al reproducir se conecta con YouTube.</small></button>
+        </div>
+        <p class="video-fallback"><a href="https://www.youtube.com/watch?v=RHyPDvW76Ng" target="_blank" rel="noopener">Ver el reportaje en YouTube <span aria-hidden="true">↗</span></a></p>
+        <ul class="home-press">
+            <li><a href="https://interaulas.org/destacadosportada/wood-teardrop-la-caravana-sostenible-creada-en-cantabria/" target="_blank" rel="noopener">Interaulas — Wood Teardrop <span aria-hidden="true">↗</span></a><p>Artículo que firmé sobre la caravana.</p></li>
+            <li><a href="https://www.eldiariomontanes.es/region/trasmiera/biblioteca-inspirada-fomentar-20181009200804-ntvo.html" target="_blank" rel="noopener">El Diario Montañés — Bibliowave <span aria-hidden="true">↗</span></a></li>
+        </ul>
+        <a class="home-text-link" href={sitePath('/prensa/')}>Todas las referencias <span aria-hidden="true">→</span></a>
+    </section>
+    <footer class="home-closing home-reading reveal">
+        <p>No existen trabajos imposibles,<br />solo nuevos intereses por descubrir.</p>
+        <a class="linkedin-icon" href="https://www.linkedin.com/in/antoniomadrazo/" target="_blank" rel="noopener" aria-label="Perfil de Antonio Madrazo en LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M5.37 24H.4V8h4.97v16ZM2.88 5.81A2.88 2.88 0 1 1 2.88.05a2.88 2.88 0 0 1 0 5.76ZM24 24h-4.96v-7.79c0-1.85-.04-4.23-2.58-4.23-2.58 0-2.97 2.01-2.97 4.1V24H8.53V8h4.76v2.18h.07c.66-1.25 2.28-2.57 4.69-2.57C23.07 7.61 24 10.92 24 15.22V24Z" /></svg></a>
+    </footer>
+</Layout>
+<script>
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!reducedMotion.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            for (const entry of entries) if (entry.isIntersecting) {
+                entry.target.classList.remove('awaiting-entry');
+                observer.unobserve(entry.target);
+            }
+        }, { threshold: 0, rootMargin: '0px 0px -24px 0px' });
+        document.querySelectorAll('.reveal').forEach(element => {
+            if (element.getBoundingClientRect().top > window.innerHeight) {
+                element.classList.add('awaiting-entry');
+                observer.observe(element);
+            }
+        });
+        reducedMotion.addEventListener('change', () => {
+            if (reducedMotion.matches) {
+                observer.disconnect();
+                document.querySelectorAll('.awaiting-entry').forEach(element => element.classList.remove('awaiting-entry'));
+            }
+        });
+        document.addEventListener('focusin', event => {
+            if (event.target instanceof HTMLElement) event.target.closest('.awaiting-entry')?.classList.remove('awaiting-entry');
+        });
+    }
+    const videoContainer = document.querySelector<HTMLElement>('.home-video');
+    if (videoContainer) videoContainer.hidden = false;
+    document.querySelector<HTMLButtonElement>('.video-load')?.addEventListener('click', event => {
+        const button = event.currentTarget as HTMLButtonElement;
+        const frame = document.createElement('iframe');
+        frame.src = `https://www.youtube-nocookie.com/embed/${button.dataset.video}?autoplay=1`;
+        frame.title = 'Reportaje de RTVE sobre Wood Teardrop';
+        frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        frame.allowFullscreen = true;
+        button.replaceWith(frame);
+        frame.focus();
+    });
+</script>

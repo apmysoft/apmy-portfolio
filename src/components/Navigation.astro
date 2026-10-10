@@ -1,0 +1,10 @@
+<nav class="floating-nav" aria-label="Navegación principal">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#laboratorio">Laboratorio</a>
+    <a href="#ecos">Ecos externos</a>
+</nav>
+<style>
+    .floating-nav { position: fixed; bottom: max(1.25rem, env(safe-area-inset-bottom)); right: max(1.25rem, env(safe-area-inset-right)); z-index: 100; display: flex; gap: 1.25rem; align-items: center; background: hsl(var(--color-bg-base) / .96); padding: .25rem 1rem; border: 1px solid hsl(var(--color-border)); font-family: var(--font-mono); font-size: .75rem; }
+    a { display: flex; align-items: center; min-height: 44px; }
+    @media (max-width: 480px) { .floating-nav { right: .75rem; bottom: max(.75rem, env(safe-area-inset-bottom)); gap: .85rem; padding-inline: .75rem; font-size: .68rem; max-width: calc(100% - 1.5rem); } }
+</style>

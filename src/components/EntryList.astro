@@ -1,0 +1,14 @@
+---
+import { sitePath } from '../utils/site-path.mjs';
+import type { CollectionEntry } from 'astro:content';
+interface Props { entries: CollectionEntry<'portfolio'>[]; }
+const { entries } = Astro.props;
+---
+<ul class="entry-list">
+    {entries.map(entry => (
+        <li>
+            <a href={sitePath(entry.data.path)}><h2>{entry.data.title}</h2></a>
+            <p>{entry.data.description}</p>
+        </li>
+    ))}
+</ul>

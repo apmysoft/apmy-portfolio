@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import EntryList from '../../components/EntryList.astro';
+const entries = (await getCollection('portfolio', entry => !entry.data.draft && entry.data.kind === 'proyecto'))
+    .sort((a, b) => ((b.data.chronologicalDate ?? b.data.originalPublished)?.valueOf() ?? 0) - ((a.data.chronologicalDate ?? a.data.originalPublished)?.valueOf() ?? 0) || a.data.path.localeCompare(b.data.path));
+---
+<Layout title="Proyectos | APMY" description="Trabajos de madera, diseño y reforma: decisiones, pruebas y resultados.">
+    <section class="section">
+        <h1>Proyectos</h1>
+        <p>Trabajos de madera, diseño y reforma: decisiones, pruebas y resultados.</p>
+        <EntryList entries={entries} />
+    </section>
+</Layout>
