@@ -31,6 +31,7 @@ html {
 	color: hsl(var(--color-text-primary));
 	font-family: var(--font-body);
 	line-height: 1.5;
+	text-align: justify;
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 }
@@ -154,6 +155,11 @@ main {
 	min-width: 0;
 }
 
+/* El marco de la cabecera marca también el ancho útil del contenido. */
+.layout-container:not(.home-layout) p {
+	max-width: none;
+}
+
 .prose {
 	padding-top: var(--space-lg);
 	overflow-wrap: anywhere;
@@ -190,7 +196,9 @@ main {
 
 .prose img {
 	display: block;
+	width: 100%;
 	margin-top: var(--space-lg);
+	margin-inline: auto;
 }
 
 .prose pre {
@@ -225,8 +233,9 @@ main {
 
 .screenshot-original {
 	display: block;
-	width: fit-content;
+	width: 100%;
 	max-width: 100%;
+	margin-inline: auto;
 }
 
 .entry-list h2 {
