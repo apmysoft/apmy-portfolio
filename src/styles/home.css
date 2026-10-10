@@ -31,13 +31,14 @@
 .home-text-link { display: inline-block; font-family: var(--font-mono); font-size: .85rem; margin-top: 1.5rem; }
 .home-hinge p { line-height: 1.8; }
 .home-notes { display: grid; gap: 1rem; margin-top: 2.5rem; }
-.home-video { aspect-ratio: 16 / 9; margin-top: 3rem; background: hsl(var(--color-bg-surface)); border: 1px solid hsl(var(--color-border)); }
-.video-load { width: 100%; height: 100%; background: transparent; border: 0; color: inherit; font: inherit; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; cursor: pointer; }
+.home-video { margin-top: 3rem; background: hsl(var(--color-bg-surface)); border: 1px solid hsl(var(--color-border)); }
+.video-load { width: 100%; aspect-ratio: 16 / 9; min-height: min-content; background: transparent; border: 0; color: inherit; font: inherit; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; cursor: pointer; }
 .video-load:focus-visible { outline: 2px solid hsl(var(--color-text-primary)); outline-offset: 4px; }
 .video-play { font-size: 2.5rem; }
 .video-load small { color: hsl(var(--color-text-secondary)); font-size: .75rem; }
 .home-video[hidden] { display: none; }
-.home-video iframe { width: 100%; height: 100%; border: 0; }
+.home-video iframe { display: block; width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
+@media (max-width: 40rem) { .video-load { aspect-ratio: auto; } }
 .video-fallback { font-size: .8rem; margin-block: .75rem 3rem; }
 .home-press { display: grid; gap: 2rem; }
 .home-press p { font-size: .9rem; margin-top: .75rem; }

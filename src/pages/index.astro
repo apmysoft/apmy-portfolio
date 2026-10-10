@@ -50,6 +50,7 @@ const notes = entries.filter(entry => entry.data.kind === 'laboratorio')
         <div class="home-video" hidden>
             <button type="button" class="video-load" data-video="RHyPDvW76Ng"><span class="video-play" aria-hidden="true">▷</span><span>Reproducir reportaje de RTVE en YouTube</span><small>Al reproducir se conecta con YouTube.</small></button>
         </div>
+        <p><small>El reproductor es opcional. Consulta la <a href={sitePath('/politica-de-cookies/')}>información sobre cookies y servicios externos</a> antes de activarlo.</small></p>
         <p class="video-fallback"><a href="https://www.youtube.com/watch?v=RHyPDvW76Ng" target="_blank" rel="noopener">Ver el reportaje en YouTube <span aria-hidden="true">↗</span></a></p>
         <ul class="home-press">
             <li><a href="https://interaulas.org/destacadosportada/wood-teardrop-la-caravana-sostenible-creada-en-cantabria/" target="_blank" rel="noopener">Interaulas — Wood Teardrop <span aria-hidden="true">↗</span></a><p>Artículo que firmé sobre la caravana.</p></li>
@@ -97,6 +98,15 @@ const notes = entries.filter(entry => entry.data.kind === 'laboratorio')
         frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
         frame.allowFullscreen = true;
         button.replaceWith(frame);
+        const close = document.createElement('button');
+        close.type = 'button';
+        close.textContent = 'Cerrar reproductor';
+        videoContainer?.after(close);
+        close.addEventListener('click', () => {
+            frame.replaceWith(button);
+            close.remove();
+            button.focus();
+        });
         frame.focus();
     });
 </script>

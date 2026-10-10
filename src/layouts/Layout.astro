@@ -60,6 +60,7 @@ const socialImage = image ? new URL(sitePath(image), Astro.site ?? site.site_url
 			{!home && <footer style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid hsl(var(--color-border)); font-size: 0.875rem;">
 				<p>&copy; {new Date().getFullYear()} {site.author.name}. {site.description}</p>
 				<a href="https://www.linkedin.com/in/antoniomadrazo/" target="_blank" rel="noopener">LinkedIn</a>
+                <span aria-hidden="true"> · </span><a href={sitePath('/politica-de-cookies/')}>Cookies y servicios externos</a>
 			</footer>}
 		</div>
 	</body>
