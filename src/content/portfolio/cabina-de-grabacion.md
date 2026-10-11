@@ -3,6 +3,7 @@ title: "Cabina de grabación económica"
 seoTitle: "Cabina de grabación económica: construcción compartida | APMY"
 description: "Participé con mi tutor y otros alumnos en la construcción de una cabina de grabación casera. El relato explica el montaje, el coste de materiales y el límite de una intervención que dejaba salir sonido al exterior."
 path: "/construccion-de-cabina-de-grabacion-economica/"
+chronologicalDate: "2018-01-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

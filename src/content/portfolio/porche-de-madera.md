@@ -3,6 +3,7 @@ title: "Construcción de un porche de madera"
 seoTitle: "Porche de madera: construcción familiar en Cantabria | APMY"
 description: "Colaboré con mi familia en la construcción de un porche para la casa de mis suegros. El relato recoge las dificultades de montaje y acabado, y mi mirada posterior desde el trabajo en estructuras de madera."
 path: "/construccion-de-un-porche-de-madera/"
+chronologicalDate: "2019-01-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

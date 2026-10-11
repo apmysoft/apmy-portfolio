@@ -24,13 +24,13 @@
   },
   {
     "chronology": "2015",
-    "text": "Dejo la universidad a falta de 15 créditos. Un título no define cómo trabajo. Intento montar una empresa. Sale mal.",
+    "text": "Dejo la universidad a falta de 15 créditos. Intento montar una empresa. Sale mal.",
     "side": "right",
     "date": "2015-09"
   },
   {
     "chronology": "2015",
-    "text": "Empiezo a ejecutar sin miedo: radio local, hostelería, eventos. Diseño, comunicación, coordinación. Aprendo haciendo.",
+    "text": "Trabajo en radio local, hostelería y eventos. Diseño, comunicación y coordinación.",
     "side": "right",
     "date": "2015-11"
   },
@@ -38,7 +38,7 @@
     "chronology": "2016",
     "text": "Toco fondo. Sin trabajo ni horizonte claro. Decido reciclarme.",
     "side": "left",
-    "date": "2016-05"
+    "date": "2016-06"
   },
   {
     "chronology": "2016–2018",
@@ -108,21 +108,84 @@
   },
   {
     "chronology": "2020",
-    "text": "Entro en mi empresa actual. Estructuras de madera. Todo empieza a encajar.",
+    "text": "Entro en Sallende Habitat. Modelado de estructuras en Cadwork, estudios de costes y presupuestos.",
     "side": "right",
     "date": "2020-09"
   },
   {
     "chronology": "2022",
+    "date": "2022-09",
+    "dateApproximate": true,
+    "dateAnchor": "Inicio aproximado de la base, situado por el autor",
+    "text": "Estructuro una base histórica de obras para consultar coeficientes en estudios preliminares. Sigue en uso.",
+    "side": "left",
+    "link": {
+      "label": "base histórica de obras",
+      "href": "/historico-estimacion-estructuras/"
+    }
+  },
+  {
+    "chronology": "2023",
+    "startDate": "2023-01",
+    "endDate": "2023-12",
+    "dateApproximate": true,
+    "dateAnchor": "Responsabilidades confirmadas para 2023; mes de inicio no documentado",
+    "text": "Incorporo replanteo en obra, despiece técnico y exportación de mecanizados a centros CNC Hundegger.",
+    "side": "right"
+  },
+  {
+    "chronology": "2023",
     "text": "Formación continua: entramado ligero, escaneo 3D, nubes de puntos. El oficio se cruza con la tecnología.",
     "side": "left",
-    "date": "2022-12"
+    "date": "2023-12",
+    "dateAnchor": "Formación continua: fecha confirmada por el autor el 11-10-2026"
+  },
+  {
+    "chronology": "2024",
+    "startDate": "2024-01",
+    "endDate": "2024-12",
+    "dateApproximate": true,
+    "dateAnchor": "Responsabilidades confirmadas para 2024; no fecha del caso del porche",
+    "text": "Trabajo con escáner Leica BLK360, nubes de puntos y modelado en Cadwork. Imparto formación sobre madera estructural para BigMat Sallende.",
+    "side": "right"
   },
   {
     "chronology": "2025",
-    "text": "Vuelvo a crear con software. Inteligencia artificial como herramienta. Apps internas. Optimización real.",
+    "startDate": "2025-01",
+    "endDate": "2025-12",
+    "dateApproximate": true,
+    "dateAnchor": "Coordinación de fabricación desde 2025; mes de inicio no documentado",
+    "text": "Coordino la fabricación de entramado ligero en taller: control de procesos y supervisión del ensamblaje.",
+    "side": "left"
+  },
+  {
+    "chronology": "2025",
+    "text": "Vuelvo a crear con software. Desarrollo herramientas para tareas de oficina técnica con apoyo de IA.",
     "side": "right",
-    "date": "2025-04"
+    "date": "2025-04",
+    "dateAnchor": "Retorno al software: fecha confirmada por el autor el 11-10-2026"
+  },
+  {
+    "chronology": "2025",
+    "date": "2025-05",
+    "dateAnchor": "Prueba de concepto: mes confirmado por el autor",
+    "text": "Pruebo un optimizador de corte en Python para explorar alternativas a una función integrada en Cadwork.",
+    "side": "left",
+    "link": {
+      "label": "optimizador de corte en Python",
+      "href": "/optimizador-corte-madera/"
+    }
+  },
+  {
+    "chronology": "2025",
+    "date": "2025-08",
+    "dateAnchor": "Aplicación de costes: mes confirmado por el autor",
+    "text": "Llevo la lógica de costes a una aplicación en Python. Se utiliza una temporada y después pasa a segundo plano con la migración del ERP.",
+    "side": "right",
+    "link": {
+      "label": "aplicación en Python",
+      "href": "/aplicacion-costes-estructuras/"
+    }
   },
   {
     "chronology": "2026",
@@ -137,8 +200,12 @@
   },
   {
     "chronology": "Ahora",
-    "text": "Exploro, pruebo, publico. Portfolio, producto, escritura. El proceso sigue abierto.",
+    "text": "Conecto oficina técnica y fabricación. Documento esa evolución y las actuaciones que forman parte de mi trabajo.",
     "side": "left",
-    "date": "today"
+    "date": "today",
+    "link": {
+      "label": "esa evolución",
+      "href": "/oficina-tecnica-y-fabricacion/"
+    }
   }
 ]

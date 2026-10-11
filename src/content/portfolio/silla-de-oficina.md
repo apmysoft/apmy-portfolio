@@ -3,6 +3,7 @@ title: "Silla de oficina de madera"
 seoTitle: "Silla de oficina de madera: diseño y prototipo | APMY"
 description: "Diseñé y fabriqué una silla de oficina durante mis clases de prototipos. El relato recorre el curvado, los cambios de la base y su desmontaje después de usarla en casa."
 path: "/silla-de-oficina-de-madera/"
+chronologicalDate: "2017-01-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Planos y modelos: Antonio Madrazo.", "Fotografías: Antonio Madrazo."]

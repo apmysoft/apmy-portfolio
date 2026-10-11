@@ -3,6 +3,7 @@ title: "Desmontar la cocina antes de la reforma"
 seoTitle: "Desmontar la cocina antes de la reforma | APMY"
 description: "La retirada de los muebles, la encimera y los electrodomésticos de la cocina anterior."
 path: "/desmantelamiento-cocina/"
+chronologicalDate: "2019-03-03"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

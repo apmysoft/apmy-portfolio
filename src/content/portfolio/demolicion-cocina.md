@@ -3,6 +3,7 @@ title: "La demolición de la cocina"
 seoTitle: "La demolición de la cocina | APMY"
 description: "Una fase de la reforma documentada en vídeo: demolición, retirada de azulejos y escombros."
 path: "/demolicion-cocina/"
+chronologicalDate: "2019-08-24"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

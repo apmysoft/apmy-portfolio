@@ -3,6 +3,7 @@ title: "Mi primera prueba con el torno de madera"
 seoTitle: "Mi primera prueba con el torno de madera | APMY"
 description: "Una nota de taller sobre mi primera experiencia torneando madera."
 path: "/aprendiendo-usar-torno-madera/"
+chronologicalDate: "2017-06-25"
 kind: "laboratorio"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

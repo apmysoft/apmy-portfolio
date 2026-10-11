@@ -3,6 +3,7 @@ title: "Una mesa y una silla con forma de dinosaurio"
 seoTitle: "Una mesa y una silla con forma de dinosaurio | APMY"
 description: "Una mesa y una silla de dinosaurio, adaptadas de referencias y fabricadas en DM: las usaron los nietos de mi tía y ahora las hereda mi hijo."
 path: "/muebles-infantiles-con-forma-de-dinosaurio/"
+chronologicalDate: "2018-04-21"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

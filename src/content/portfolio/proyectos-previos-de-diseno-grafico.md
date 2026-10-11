@@ -3,6 +3,7 @@ title: "Mis primeros trabajos de diseño gráfico"
 seoTitle: "Mis primeros trabajos de diseño gráfico | APMY"
 description: "Mi archivo de trabajos gráficos para hostelería, eventos, vídeo e inmobiliaria, realizados a partir de distintas referencias."
 path: "/proyectos-previos-de-diseno-grafico/"
+chronologicalDate: "2017-02-01"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

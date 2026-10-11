@@ -3,6 +3,7 @@ title: "La nevada de Castro Urdiales de 2018"
 seoTitle: "La nevada de Castro Urdiales de 2018 | APMY"
 description: "Mis fotografías de la nevada del 28 de febrero de 2018 en Castro Urdiales."
 path: "/gran-nevada-castro-urdiales-2018/"
+chronologicalDate: "2018-02-28"
 kind: "laboratorio"
 revised: "2026-10-08"
 draft: false

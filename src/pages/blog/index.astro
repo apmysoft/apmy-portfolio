@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import EntryList from '../../components/EntryList.astro';
 const entries = (await getCollection('portfolio', entry => !entry.data.draft && entry.data.kind === 'laboratorio'))
-    .sort((a, b) => (b.data.originalPublished?.valueOf() ?? 0) - (a.data.originalPublished?.valueOf() ?? 0));
+    .sort((a, b) => (b.data.chronologicalDate?.valueOf() ?? 0) - (a.data.chronologicalDate?.valueOf() ?? 0) || a.data.path.localeCompare(b.data.path));
 ---
 <Layout title="Laboratorio | APMY" description="Notas de taller y registros de distintas etapas.">
     <section class="section">

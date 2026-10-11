@@ -3,6 +3,7 @@ title: "Probar una cola de milano a tracción"
 seoTitle: "Probar una cola de milano a tracción | APMY"
 description: "Una prueba de tracción con mi propio peso: las fibras de la pieza hembra cedieron antes que la unión encolada."
 path: "/prueba-resistencia-ensamble-cola-milano/"
+chronologicalDate: "2017-06-25"
 kind: "laboratorio"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

@@ -3,6 +3,7 @@ title: "Adaptar un vestidor PAX a una columna"
 seoTitle: "Adaptar un vestidor PAX a una columna | APMY"
 description: "Un vestidor de cuatro módulos PAX: corté y ajusté el mueble y sus complementos para encajar con una columna. Lo usamos a diario."
 path: "/montaje-armario-vestidor-ikea-pax/"
+chronologicalDate: "2020-01-13"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

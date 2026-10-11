@@ -8,40 +8,44 @@ import '../styles/home.css';
 const entries = await getCollection('portfolio', entry => !entry.data.draft);
 const entry = entries.find(entry => entry.data.path === '/');
 if (!entry) throw new Error('Falta la portada editorial');
-const notes = entries.filter(entry => entry.data.kind === 'laboratorio')
-    .sort((a, b) => (b.data.originalPublished?.getTime() ?? 0) - (a.data.originalPublished?.getTime() ?? 0) || a.data.path.localeCompare(b.data.path))
-    .slice(0, 3);
+const notePaths = ['/oficina-tecnica-y-fabricacion/', '/optimizador-corte-madera/', '/croquis-visualizacion-ia/'];
+const notes = notePaths.map(path => {
+    const note = entries.find(entry => entry.data.path === path && entry.data.kind === 'laboratorio');
+    if (!note) throw new Error(`Falta la entrada destacada de Laboratorio: ${path}`);
+    return note;
+});
 ---
-<Layout home title="Antonio Madrazo — Empiezo antes de tenerlo claro | APMY" description={entry.data.description} canonicalPath="/">
+<Layout home title={entry.data.seoTitle} description={entry.data.description} canonicalPath="/">
     <Navigation />
     <section class="home-hero" aria-labelledby="apertura">
-        <div><h1 id="apertura">Empiezo antes de tenerlo claro.</h1><p>Ajusto mientras avanzo.</p></div>
+        <div><h1 id="apertura">Oficina técnica, fabricación y obra.</h1><p>Estructuras de madera y construcción industrializada.</p></div>
     </section>
     <section class="home-context home-reading reveal" aria-label="Desde dónde trabajo">
-        <p>Nunca he trabajado bien siguiendo instrucciones cerradas.</p>
-        <p>He aprendido construyendo sin garantías, equivocándome pronto y ajustando sobre la marcha.</p>
-        <p>Esta web no es un catálogo.<br />Es el rastro de cómo pienso cuando hago.</p>
+        <p>Soy Antonio Madrazo. Trabajo en Sallende Habitat, conectando el modelado de estructuras de madera con el despiece, el mecanizado y la fabricación.</p>
+        <p>Mi actividad ha ido desde los estudios de costes y el modelado en Cadwork hasta la medición en obra y la coordinación de fabricación de entramado ligero.</p>
+        <p>Aquí documento trabajos profesionales y proyectos propios: las condiciones de partida, las decisiones y lo que ocurrió al llevarlas a la práctica.</p>
     </section>
     <section class="home-journey" aria-label="Recorrido personal y profesional">
         <Timeline />
     </section>
     <section id="proyectos" class="home-section home-reading reveal" aria-labelledby="casos">
-        <h2 id="casos">Casos donde el proceso importaba más que la solución inicial.</h2>
+        <h2 id="casos">Del estudio a la fabricación.</h2>
         <div class="home-cases">
-            <article><h3><a href={sitePath('/wood-teardrop/')}>Wood Teardrop <span aria-hidden="true">↗</span></a></h3><p>Construir sin saber exactamente a dónde iba a llegar.</p></article>
-            <article><h3><a href={sitePath('/bibliowave/')}>Bibliowave <span aria-hidden="true">↗</span></a></h3><p>Resolver un problema real sin asumir la primera solución.</p></article>
+            <article><h3><a href={sitePath('/porche-nube-puntos/')}>Un porche ajustado a la terraza existente <span aria-hidden="true">↗</span></a></h3><p>Medir la caída y el descuadre, incorporarlos al modelo y preparar la estructura para el taller.</p></article>
+            <article><h3><a href={sitePath('/historico-estimacion-estructuras/')}>Utilizar el histórico antes de modelar <span aria-hidden="true">↗</span></a></h3><p>Estructurar datos de obras ejecutadas para consultar referencias durante el estudio preliminar.</p></article>
+            <article><h3><a href={sitePath('/aplicacion-costes-estructuras/')}>Llevar la lógica de costes a una aplicación <span aria-hidden="true">↗</span></a></h3><p>Trasladar cálculos desde Excel y VBA a una herramienta en Python que llegó a utilizarse en el trabajo.</p></article>
         </div>
         <a class="home-text-link" href={sitePath('/proyectos/')}>Ver todos los proyectos <span aria-hidden="true">→</span></a>
     </section>
     <section class="home-section home-reading home-hinge reveal" aria-labelledby="bisagra">
         <h2 id="bisagra">Proyecto bisagra</h2>
-        <p>Hubo un proyecto sin cliente que cambió mi forma de trabajar.</p>
-        <p>Reformar mi propia casa me obligó a decidir sin validación externa.<br />A convivir con errores reales.<br />A iterar sin excusas.</p>
+        <p>La reforma integral de mi casa reunió distribución, instalaciones, aislamiento y trabajo con madera en una misma obra.</p>
+        <p>Documenté las decisiones, las intervenciones que hice y los ajustes que aparecieron al ejecutarlas. Un proyecto propio con alcance y consecuencias reales.</p>
         <a class="home-text-link" href={sitePath('/reforma-integral-mi-casa/')}>Entrar en el proyecto <span aria-hidden="true">→</span></a>
     </section>
     <section id="laboratorio" class="home-section home-reading reveal" aria-labelledby="lab">
         <h2 id="lab"><a href={sitePath('/blog/')}>Laboratorio <span aria-hidden="true">↗</span></a></h2>
-        <p>Ideas en curso.<br />Procesos abiertos.<br />Preguntas que aún no sé responder.</p>
+        <p>Pruebas, herramientas y notas de trabajo.<br />Qué quise comprobar, qué llegó a funcionar y qué alcance tuvo.</p>
         <ul class="home-notes">{notes.map(note => <li><a href={sitePath(note.data.path)}>{note.data.title} <span aria-hidden="true">↗</span></a></li>)}</ul>
     </section>
     <section id="ecos" class="home-section home-reading reveal" aria-labelledby="ecos-titulo">
@@ -59,7 +63,7 @@ const notes = entries.filter(entry => entry.data.kind === 'laboratorio')
         <a class="home-text-link" href={sitePath('/prensa/')}>Todas las referencias <span aria-hidden="true">→</span></a>
     </section>
     <footer class="home-closing home-reading reveal">
-        <p>No existen trabajos imposibles,<br />solo nuevos intereses por descubrir.</p>
+        <p>Si quieres hablar de un proyecto,<br /><a href="https://www.linkedin.com/in/antoniomadrazo/" target="_blank" rel="noopener">puedes escribirme en LinkedIn.</a></p>
         <a class="linkedin-icon" href="https://www.linkedin.com/in/antoniomadrazo/" target="_blank" rel="noopener" aria-label="Perfil de Antonio Madrazo en LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M5.37 24H.4V8h4.97v16ZM2.88 5.81A2.88 2.88 0 1 1 2.88.05a2.88 2.88 0 0 1 0 5.76ZM24 24h-4.96v-7.79c0-1.85-.04-4.23-2.58-4.23-2.58 0-2.97 2.01-2.97 4.1V24H8.53V8h4.76v2.18h.07c.66-1.25 2.28-2.57 4.69-2.57C23.07 7.61 24 10.92 24 15.22V24Z" /></svg></a>
     </footer>
 </Layout>

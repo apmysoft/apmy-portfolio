@@ -3,6 +3,7 @@ title: "Bibliowave"
 seoTitle: "Bibliowave: mobiliario para una biblioteca | APMY"
 description: "Desarrollé el diseño y los planos de Bibliowave para la biblioteca del Centro de Profesores de Santander. El relato recoge los cambios del encargo, la fabricación por la carpintería y el montaje compartido."
 path: "/bibliowave/"
+chronologicalDate: "2018-01-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

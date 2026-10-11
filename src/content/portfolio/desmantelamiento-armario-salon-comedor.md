@@ -3,6 +3,7 @@ title: "Desmontar el armario del salón"
 seoTitle: "Desmontar el armario del salón | APMY"
 description: "El desmontaje de un mueble de salón con minibar y espacio para la televisión, antes de reformar la vivienda."
 path: "/desmantelamiento-armario-salon-comedor/"
+chronologicalDate: "2019-03-13"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

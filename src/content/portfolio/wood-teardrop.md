@@ -3,6 +3,7 @@ title: "Wood Teardrop"
 seoTitle: "Wood Teardrop: construir una caravana de madera | APMY"
 description: "Diseñé y construí una caravana de madera para viajar con los perros. Este relato recoge los cambios de materiales, las dificultades de montaje y su cierre tras el deterioro durante el almacenamiento."
 path: "/wood-teardrop/"
+chronologicalDate: "2018-01-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo."]

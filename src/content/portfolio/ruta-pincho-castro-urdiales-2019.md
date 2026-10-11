@@ -3,6 +3,7 @@ title: "La Ruta del Pincho de 2019"
 seoTitle: "La Ruta del Pincho de 2019 | APMY"
 description: "El registro de la presentación de 2019 dentro de mi trabajo de community manager en las rutas del pincho de Castro Urdiales."
 path: "/ruta-pincho-castro-urdiales-2019/"
+chronologicalDate: "2019-04-03"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

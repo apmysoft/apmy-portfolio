@@ -3,6 +3,7 @@ title: "Diseño CNC: Big Boss"
 seoTitle: "Diseño CNC: Big Boss | APMY"
 description: "Una mesa de portátil mecanizada en CNC cuyo peso cambió su uso: las cajas quedaron como almacenamiento y el tablero de Big Boss como cuadro."
 path: "/diseno-cnc-big-boss/"
+chronologicalDate: "2017-10-01"
 kind: "proyecto"
 revised: "2026-10-08"
 mediaCredits: ["Fotografías: Antonio Madrazo.", "Captura de videojuego y trazado de fresa en AutoCAD: Antonio Madrazo. Personaje Big Boss, de Metal Gear Solid."]

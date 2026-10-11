@@ -4,7 +4,7 @@ seoTitle: "Caliber Guard: desarrollar una app para colecciones de relojes | APMY
 description: "De gestionar mis relojes en Excel a publicar una app en Android. Decisiones de producto, pruebas con coleccionistas y correcciones tras el lanzamiento."
 path: "/caliber-guard/"
 kind: "proyecto"
-chronologicalDate: "2026-03-23"
+chronologicalDate: "2026-01-01"
 revised: "2026-10-10"
 socialImage: "/images/caliber-guard/hdr-35-09.jpeg"
 mediaCredits: ["Capturas de Caliber Guard compartidas por Antonio Madrazo."]

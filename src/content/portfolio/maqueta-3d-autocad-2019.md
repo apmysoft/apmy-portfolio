@@ -3,6 +3,7 @@ title: "El modelo 3D de mi vivienda"
 seoTitle: "El modelo 3D de mi vivienda | APMY"
 description: "Un modelo de mi vivienda en AutoCAD 2019 para estudiar la distribución, preparar la obra y diseñar los interiores."
 path: "/maqueta-3d-autocad-2019/"
+chronologicalDate: "2019-09-03"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

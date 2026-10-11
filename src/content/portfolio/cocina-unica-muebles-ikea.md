@@ -3,6 +3,7 @@ title: "La cocina de mi casa: módulos y encimeras de castaño"
 seoTitle: "La cocina de mi casa: módulos y encimeras de castaño | APMY"
 description: "Diseñé mi cocina con módulos IKEA y fabriqué las encimeras de castaño desde los tablones en bruto, con uniones de galleta y acabado OSMO."
 path: "/cocina-unica-muebles-ikea/"
+chronologicalDate: "2020-08-16"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"

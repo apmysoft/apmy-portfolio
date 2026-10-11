@@ -1,15 +1,16 @@
-.home-layout { max-width: 1100px; padding-inline: clamp(1.25rem, 5vw, 4rem); }
+.home-layout { overflow-wrap: anywhere; max-width: 1100px; padding-inline: clamp(1.25rem, 5vw, 4rem); }
 .home-layout main { padding-bottom: 6rem; }
 .home-layout a, .home-layout button { scroll-margin-block: 6rem; }
 .home-layout section[id] { scroll-margin-top: 3rem; }
 .home-reading { max-width: 650px; margin-inline: auto; }
 .home-hero { min-height: 100svh; display: flex; align-items: center; }
+.home-hero > div { min-width: 0; max-width: 100%; overflow-wrap: anywhere; text-align: left; }
 .home-hero h1 { max-width: 40ch; font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; font-weight: 400; }
 .home-hero p { margin: 1.5rem 0 0; font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .home-context { padding-block: clamp(5rem, 12vh, 9rem) 8rem; font-size: 1.125rem; }
 .home-context p { margin-block: 0 2rem; }
 .home-journey { padding-block: 4rem 8rem; }
-.timeline-shell { position: relative; --timeline-desktop-estimate: max(180px, calc(12rem - 12px)); --timeline-mobile-estimate: max(280px, calc(32rem - 232px)); --timeline-length: var(--timeline-desktop-length); --timeline-height: var(--timeline-desktop-height); height: var(--timeline-height); }
+.timeline-shell { position: relative; --timeline-desktop-estimate: max(180px, calc(12rem - 12px)); --timeline-mobile-estimate: max(280px, calc(64rem - 744px)); --timeline-length: var(--timeline-desktop-length); --timeline-height: var(--timeline-desktop-height); height: var(--timeline-height); }
 .home-timeline { position: relative; height: 100%; }
 .home-timeline::before { content: ''; position: absolute; top: 0; height: var(--timeline-length); left: 50%; width: 1px; background: hsl(var(--color-border)); }
 .milestone { position: absolute; width: calc(50% - 3rem); --card-top: var(--card-desktop-top); top: var(--card-top); }

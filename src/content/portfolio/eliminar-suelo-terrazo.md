@@ -3,6 +3,7 @@ title: "Retirar el suelo de terrazo"
 seoTitle: "Retirar el suelo de terrazo | APMY"
 description: "Una nota de la reforma sobre la retirada del terrazo y la posición del cincel."
 path: "/eliminar-suelo-terrazo/"
+chronologicalDate: "2019-08-22"
 kind: "laboratorio"
 legacyProjectAlias: true
 revised: "2026-10-08"
