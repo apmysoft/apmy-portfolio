@@ -18,7 +18,7 @@ const desktopLength = 6000;
 const mobileLength = 10000;
 const items = (milestones as Milestone[]).map(item => ({ ...item,
     position: fraction(item.date ?? item.startDate, start, end),
-}));
+})).sort((a, b) => a.position - b.position);
 const desktop = staticCards(items, desktopLength, false);
 const mobile = staticCards(items, mobileLength, true);
 ---
